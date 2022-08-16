@@ -15,9 +15,9 @@
 // ${brazil}
 // `)
 
-function percentageOfWorld1(population) {
-    return (population / 7900000000) * 100
-}
+// function percentageOfWorld1(population) {
+//     return (population / 7900000000) * 100
+// }
 
 // console.log(percentageOfWorld1(33000000))
 // console.log(percentageOfWorld1(57000000))
@@ -50,14 +50,48 @@ function percentageOfWorld1(population) {
 
 // console.log(percentages);
 
-const neighbours = ["Thailand", "Indonesia", "Singapore"]
-neighbours.push("Utopia")
-console.log(neighbours)
-neighbours.pop()
-console.log(neighbours)
-if (!neighbours.includes("Germany")) {
-    console.log('Probably not a central European country :D')
+// const neighbours = ["Thailand", "Indonesia", "Singapore"]
+// neighbours.push("Utopia")
+// console.log(neighbours)
+// neighbours.pop()
+// console.log(neighbours)
+// if (!neighbours.includes("Germany")) {
+//     console.log('Probably not a central European country :D')
+// }
+// const index = neighbours.indexOf("Indonesia")
+// neighbours[index] = "Malaysia's Inferior ;)"
+// console.log(neighbours)
+
+
+const myCountry = {
+    country: "Malaysia",
+    capital: "Kuala Lumpur",
+    language: "Bahasa Malaysia",
+    neighbours: ["Thailand", "Indonesia", "Singapore"],
+    population: 33000000,
+
+    describe: function () {
+        return `${this.country} has ${this.population} ${this.language}-speaking people,
+        ${this.neighbours.length} neighbouring countries and a capital called 
+        ${this.capital}.`
+    },
+
+    checkIsland: function () {
+        this.isIsland = this.neighbours.length === 0 ? true : false
+        return this.isIsland
+    }
 }
-const index = neighbours.indexOf("Indonesia")
-neighbours[index] = "Malaysia's Inferior ;)"
-console.log(neighbours)
+console.log(myCountry.describe())
+myCountry.checkIsland()
+console.log(myCountry.isIsland)
+
+// console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people,
+// ${myCountry.neighbours.length} neighbouring countries and a capital called 
+// ${myCountry.capital}.`)
+
+// myCountry.population += 2000000;
+// console.log(myCountry.population)
+// myCountry["population"] -= 2000000;
+// console.log(myCountry["population"])
+
+console.log(myCountry)
