@@ -15,9 +15,9 @@
 // ${brazil}
 // `)
 
-// function percentageOfWorld1(population) {
-//     return (population / 7900000000) * 100
-// }
+function percentageOfWorld1(population) {
+    return (population / 7900000000) * 100
+}
 
 // console.log(percentageOfWorld1(33000000))
 // console.log(percentageOfWorld1(57000000))
@@ -44,7 +44,7 @@
 // console.log(describePopulation('Norway', 57000000))
 // console.log(describePopulation('Brazil', 100000000))
 
-// const populations = [33000000, 57000000, 100000000, 22000000]
+const populations = [33000000, 57000000, 100000000, 22000000]
 // console.log(populations.length === 4)
 // const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])]
 
@@ -63,27 +63,27 @@
 // console.log(neighbours)
 
 
-const myCountry = {
-    country: "Malaysia",
-    capital: "Kuala Lumpur",
-    language: "Bahasa Malaysia",
-    neighbours: ["Thailand", "Indonesia", "Singapore"],
-    population: 33000000,
+// const myCountry = {
+//     country: "Malaysia",
+//     capital: "Kuala Lumpur",
+//     language: "Bahasa Malaysia",
+//     neighbours: ["Thailand", "Indonesia", "Singapore"],
+//     population: 33000000,
 
-    describe: function () {
-        return `${this.country} has ${this.population} ${this.language}-speaking people,
-        ${this.neighbours.length} neighbouring countries and a capital called 
-        ${this.capital}.`
-    },
+//     describe: function () {
+//         return `${this.country} has ${this.population} ${this.language}-speaking people,
+//         ${this.neighbours.length} neighbouring countries and a capital called 
+//         ${this.capital}.`
+//     },
 
-    checkIsland: function () {
-        this.isIsland = this.neighbours.length === 0 ? true : false
-        return this.isIsland
-    }
-}
-console.log(myCountry.describe())
-myCountry.checkIsland()
-console.log(myCountry.isIsland)
+//     checkIsland: function () {
+//         this.isIsland = this.neighbours.length === 0 ? true : false
+//         return this.isIsland
+//     }
+// }
+// console.log(myCountry.describe())
+// myCountry.checkIsland()
+// console.log(myCountry.isIsland)
 
 // console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people,
 // ${myCountry.neighbours.length} neighbouring countries and a capital called 
@@ -94,4 +94,35 @@ console.log(myCountry.isIsland)
 // myCountry["population"] -= 2000000;
 // console.log(myCountry["population"])
 
-console.log(myCountry)
+// console.log(myCountry)
+
+// for (let voterNo = 1; voterNo <= 50; voterNo++) {
+//     console.log(`Voter number ${voterNo} is currently voting`)
+// }
+
+const percentages2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+    percentages2.push(percentageOfWorld1(populations[i]))
+}
+
+console.log(percentages2)
+
+// const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+// for (let listNo = 0; listNo < listOfNeighbours.length; listNo++) {
+//     console.log("-- Country Neighbours--")
+//     for (let neigh = 0; neigh < listOfNeighbours[listNo].length; neigh++) {
+//         console.log(listOfNeighbours[listNo][neigh])
+//     }
+// }
+
+const percentage3 = [];
+let i = 0;
+
+while (percentage3.length !== populations.length) {
+    percentage3.push(percentageOfWorld1(populations[i]))
+    i++;
+}
+
+console.log(percentage3)
