@@ -15,26 +15,26 @@
 // § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 // m tall.
 
-let dataOneMarkWeight = 78
-let dataOneMarkHeight = 1.69
-let dataOneJohnWeight = 92
-let dataOneJohnHeight = 1.95
+let dataOneMarkWeight = 78;
+let dataOneMarkHeight = 1.69;
+let dataOneJohnWeight = 92;
+let dataOneJohnHeight = 1.95;
 
-let dataTwoMarkWeight = 95
-let dataTwoMarkHeight = 1.88
-let dataTwoJohnWeight = 85
-let dataTwoJohnHeight = 1.76
+let dataTwoMarkWeight = 95;
+let dataTwoMarkHeight = 1.88;
+let dataTwoJohnWeight = 85;
+let dataTwoJohnHeight = 1.76;
 
-let dataOneMarkBMI = dataOneMarkWeight / dataOneMarkHeight ** 2
-let dataOneJohnBMI = dataOneJohnWeight / dataOneJohnHeight ** 2
+let dataOneMarkBMI = dataOneMarkWeight / dataOneMarkHeight ** 2;
+let dataOneJohnBMI = dataOneJohnWeight / dataOneJohnHeight ** 2;
 
-let markHigherBMI = dataOneMarkBMI > dataOneJohnBMI
-console.log(dataOneMarkBMI, dataOneJohnBMI, markHigherBMI)
+let markHigherBMI = dataOneMarkBMI > dataOneJohnBMI;
+console.log(dataOneMarkBMI, dataOneJohnBMI, markHigherBMI);
 
-let dataTwoMarkBMI = dataTwoMarkWeight / dataTwoMarkHeight ** 2
-let dataTwoJohnBMI = dataTwoJohnWeight / dataTwoJohnHeight ** 2
+let dataTwoMarkBMI = dataTwoMarkWeight / dataTwoMarkHeight ** 2;
+let dataTwoJohnBMI = dataTwoJohnWeight / dataTwoJohnHeight ** 2;
 
-markHigherBMI = dataTwoMarkBMI > dataTwoJohnBMI
-console.log(dataTwoMarkBMI, dataTwoJohnBMI, markHigherBMI)
+markHigherBMI = dataTwoMarkBMI > dataTwoJohnBMI;
+console.log(dataTwoMarkBMI, dataTwoJohnBMI, markHigherBMI);
 
 // REFLECTION: Need to use constants more as default

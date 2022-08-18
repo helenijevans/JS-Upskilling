@@ -1,9 +1,8 @@
-'use strict';
+"use strict";
 
 // function describeCountry(country, population, capitalCity) {
 //     return `${country} has ${population} people and its capital city is ${capitalCity}`
 // }
-
 
 // describeCountry("Finland", "6 million", "Helsinki")
 // const malaysia = describeCountry("Malaysia", "33 million", "Kuala Lumpur")
@@ -16,7 +15,7 @@
 // `)
 
 function percentageOfWorld1(population) {
-    return (population / 7900000000) * 100
+  return (population / 7900000000) * 100;
 }
 
 // console.log(percentageOfWorld1(33000000))
@@ -44,7 +43,7 @@ function percentageOfWorld1(population) {
 // console.log(describePopulation('Norway', 57000000))
 // console.log(describePopulation('Brazil', 100000000))
 
-const populations = [33000000, 57000000, 100000000, 22000000]
+const populations = [33000000, 57000000, 100000000, 22000000];
 // console.log(populations.length === 4)
 // const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])]
 
@@ -62,7 +61,6 @@ const populations = [33000000, 57000000, 100000000, 22000000]
 // neighbours[index] = "Malaysia's Inferior ;)"
 // console.log(neighbours)
 
-
 // const myCountry = {
 //     country: "Malaysia",
 //     capital: "Kuala Lumpur",
@@ -72,7 +70,7 @@ const populations = [33000000, 57000000, 100000000, 22000000]
 
 //     describe: function () {
 //         return `${this.country} has ${this.population} ${this.language}-speaking people,
-//         ${this.neighbours.length} neighbouring countries and a capital called 
+//         ${this.neighbours.length} neighbouring countries and a capital called
 //         ${this.capital}.`
 //     },
 
@@ -86,7 +84,7 @@ const populations = [33000000, 57000000, 100000000, 22000000]
 // console.log(myCountry.isIsland)
 
 // console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people,
-// ${myCountry.neighbours.length} neighbouring countries and a capital called 
+// ${myCountry.neighbours.length} neighbouring countries and a capital called
 // ${myCountry.capital}.`)
 
 // myCountry.population += 2000000;
@@ -103,10 +101,10 @@ const populations = [33000000, 57000000, 100000000, 22000000]
 const percentages2 = [];
 
 for (let i = 0; i < populations.length; i++) {
-    percentages2.push(percentageOfWorld1(populations[i]))
+  percentages2.push(percentageOfWorld1(populations[i]));
 }
 
-console.log(percentages2)
+console.log(percentages2);
 
 // const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
 
@@ -121,8 +119,8 @@ const percentage3 = [];
 let i = 0;
 
 while (percentage3.length !== populations.length) {
-    percentage3.push(percentageOfWorld1(populations[i]))
-    i++;
+  percentage3.push(percentageOfWorld1(populations[i]));
+  i++;
 }
 
-console.log(percentage3)
+console.log(percentage3);

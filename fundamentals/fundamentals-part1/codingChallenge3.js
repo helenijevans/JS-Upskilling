@@ -13,53 +13,57 @@
 // § Data 1: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110
 // § Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123 § Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
-const dolphins1 = 96
-const dolphins2 = 108
-const dolphins3 = 89
-const koalas1 = 97
-const koalas2 = 112
-const koalas3 = 101
+const dolphins1 = 96;
+const dolphins2 = 108;
+const dolphins3 = 89;
+const koalas1 = 97;
+const koalas2 = 112;
+const koalas3 = 101;
 let dolphinMin;
 let koalaMin;
 
-const dolphinsAverage = dolphins1 + dolphins2 + dolphins3 / 3
-const koalasAverage = koalas1 + koalas2 + koalas3 / 3
+const dolphinsAverage = dolphins1 + dolphins2 + dolphins3 / 3;
+const koalasAverage = koalas1 + koalas2 + koalas3 / 3;
 
 if (dolphins3 > dolphins2) {
-    if (dolphins2 > dolphins1) {
-        dolphinMin = dolphins1
-    } else {
-        dolphinMin = dolphins2
-    }
+  if (dolphins2 > dolphins1) {
+    dolphinMin = dolphins1;
+  } else {
+    dolphinMin = dolphins2;
+  }
 } else {
-    if (dolphins3 > dolphins1) {
-        dolphinMin = dolphins1
-    } else {
-        dolphinMin = dolphins3
-    }
+  if (dolphins3 > dolphins1) {
+    dolphinMin = dolphins1;
+  } else {
+    dolphinMin = dolphins3;
+  }
 }
 
 if (koalas3 > koalas2) {
-    if (koalas2 > koalas1) {
-        koalaMin = koalas1
-    } else {
-        koalaMin = koalas2
-    }
+  if (koalas2 > koalas1) {
+    koalaMin = koalas1;
+  } else {
+    koalaMin = koalas2;
+  }
 } else {
-    if (koalas3 > koalas1) {
-        koalaMin = koalas1
-    } else {
-        koalaMin = koalas3
-    }
+  if (koalas3 > koalas1) {
+    koalaMin = koalas1;
+  } else {
+    koalaMin = koalas3;
+  }
 }
-console.log(dolphinMin, koalaMin)
+console.log(dolphinMin, koalaMin);
 
 if (dolphinsAverage > koalasAverage && dolphinMin >= 100) {
-    console.log("Dolphins Win!")
+  console.log("Dolphins Win!");
 } else if (dolphinsAverage < koalasAverage && koalaMin >= 100) {
-    console.log("Koalas Win!")
-} else if (dolphinsAverage === koalasAverage && koalaMin >= 100 && dolphinMin >= 100) {
-    console.log("Dolphins and Koalas Draw!")
+  console.log("Koalas Win!");
+} else if (
+  dolphinsAverage === koalasAverage &&
+  koalaMin >= 100 &&
+  dolphinMin >= 100
+) {
+  console.log("Dolphins and Koalas Draw!");
 } else {
-    console.log("No one wins, you are bad at this")
+  console.log("No one wins, you are bad at this");
 }

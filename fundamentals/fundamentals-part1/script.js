@@ -11,7 +11,7 @@ let language;
 // console.log(country)
 // console.log(language)
 
-language = "English"
+language = "English";
 // console.log(language)
 // continent = "Europe"
 
@@ -83,4 +83,8 @@ language = "English"
 //         console.log('Great language too :D')
 // }
 
-console.log(`${country}'s population is ${population > 33000000 ? "above" : "below"} average.`)
+console.log(
+  `${country}'s population is ${
+    population > 33000000 ? "above" : "below"
+  } average.`
+);
